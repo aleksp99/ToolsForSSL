@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cbb9ec3f-0633-409e-a3c8-016509f839af">
+  <producedTypes>
+    <objectType typeId="1c97417a-f35f-4e89-8702-3296bf85e8ad" valueTypeId="bfb8f1bb-aaba-4b8e-9162-109ab55cf176"/>
+    <managerType typeId="3e60bee3-e3b1-48ff-9b09-9457c7b2abf6" valueTypeId="055709a8-bb32-4f41-8f65-b0f1f535d9e2"/>
+  </producedTypes>
+  <name>ЖурналСобытий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Журнал событий</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ЖурналСобытий.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <templates uuid="c9499a6e-9873-43b0-8594-3f00e46bfc65">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>
