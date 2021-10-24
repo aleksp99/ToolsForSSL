@@ -40,6 +40,7 @@
     <languageCode>ru</languageCode>
   </languages>
   <commonModules>CommonModule.ВариантыОтчетовПереопределяемый</commonModules>
+  <commonModules>CommonModule.РассылкаОтчетов</commonModules>
   <settingsStorages>SettingsStorage.ХранилищеВариантовОтчетов</settingsStorages>
   <reports>Report.ЖурналСобытий</reports>
 </mdclass:Configuration>
