@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:SettingsStorage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="898b56ba-de43-4d01-b886-9891565dc43e" extendedConfigurationObject="14512818-58b0-44cc-b00d-d37913c57aad">
+<mdclass:SettingsStorage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="17e8c571-d7c9-47f1-8e0c-3ceab06040ab" extendedConfigurationObject="14512818-58b0-44cc-b00d-d37913c57aad">
   <producedTypes>
-    <managerType typeId="f5a068f8-1dba-4cd9-bd87-678139cca897" valueTypeId="a206bf21-4e62-464d-8cef-7fb5837e92c8"/>
+    <managerType typeId="1e342002-43ca-4262-98fa-503c5c3c1eb0" valueTypeId="7db26c4a-d037-4d60-a8cf-869c19eb7c1a"/>
   </producedTypes>
   <name>ХранилищеВариантовОтчетов</name>
   <objectBelonging>Adopted</objectBelonging>

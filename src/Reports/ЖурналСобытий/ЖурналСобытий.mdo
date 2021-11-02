@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cbb9ec3f-0633-409e-a3c8-016509f839af">
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9abfd581-5e05-4556-82d8-f7cb9b3cf9c1">
   <producedTypes>
-    <objectType typeId="1c97417a-f35f-4e89-8702-3296bf85e8ad" valueTypeId="bfb8f1bb-aaba-4b8e-9162-109ab55cf176"/>
-    <managerType typeId="3e60bee3-e3b1-48ff-9b09-9457c7b2abf6" valueTypeId="055709a8-bb32-4f41-8f65-b0f1f535d9e2"/>
+    <objectType typeId="69881da1-1b78-4a60-8c10-5769fed9edd9" valueTypeId="5cd328d0-756b-4c63-b0d5-421f8d5f452b"/>
+    <managerType typeId="e91dbcb0-e105-47ca-a153-a84c8016e0d0" valueTypeId="9a5a4674-5f1c-4905-af96-dfdc8f74f87e"/>
   </producedTypes>
   <name>ЖурналСобытий</name>
   <synonym>
@@ -12,7 +12,7 @@
   <useStandardCommands>true</useStandardCommands>
   <mainDataCompositionSchema>Report.ЖурналСобытий.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
   <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
-  <templates uuid="c9499a6e-9873-43b0-8594-3f00e46bfc65">
+  <templates uuid="20a4d906-27d8-4f11-b665-539a52ee0e11">
     <name>ОсновнаяСхемаКомпоновкиДанных</name>
     <synonym>
       <key>ru</key>

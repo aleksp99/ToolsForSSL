@@ -9,8 +9,6 @@
   <extension xsi:type="mdclassExtension:ConfigurationExtension">
     <defaultRunMode>Checked</defaultRunMode>
     <usePurposes>Checked</usePurposes>
-    <managedApplicationModule>Extended</managedApplicationModule>
-    <mainSectionCommandInterface>Extended</mainSectionCommandInterface>
     <defaultLanguage>Checked</defaultLanguage>
     <interfaceCompatibilityMode>Checked</interfaceCompatibilityMode>
   </extension>
@@ -40,7 +38,6 @@
     <languageCode>ru</languageCode>
   </languages>
   <commonModules>CommonModule.ВариантыОтчетовПереопределяемый</commonModules>
-  <commonModules>CommonModule.РассылкаОтчетов</commonModules>
   <settingsStorages>SettingsStorage.ХранилищеВариантовОтчетов</settingsStorages>
   <reports>Report.ЖурналСобытий</reports>
 </mdclass:Configuration>
