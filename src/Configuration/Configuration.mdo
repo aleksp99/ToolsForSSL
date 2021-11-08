@@ -39,5 +39,6 @@
   </languages>
   <commonModules>CommonModule.ВариантыОтчетовПереопределяемый</commonModules>
   <settingsStorages>SettingsStorage.ХранилищеВариантовОтчетов</settingsStorages>
+  <catalogs>Catalog.Пользователи</catalogs>
   <reports>Report.ЖурналСобытий</reports>
 </mdclass:Configuration>
