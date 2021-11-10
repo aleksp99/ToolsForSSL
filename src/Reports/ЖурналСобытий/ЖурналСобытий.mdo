@@ -11,7 +11,17 @@
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <mainDataCompositionSchema>Report.ЖурналСобытий.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>Report.ЖурналСобытий.Form.ФормаНастроек</defaultSettingsForm>
   <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <forms uuid="0030be2a-d424-4213-881e-1afb2d4b9a2d">
+    <name>ФормаНастроек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настроек</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <templates uuid="20a4d906-27d8-4f11-b665-539a52ee0e11">
     <name>ОсновнаяСхемаКомпоновкиДанных</name>
     <synonym>

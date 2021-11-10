@@ -890,24 +890,12 @@
 		<dataSource>ИсточникДанных1</dataSource>
 		<objectName>ФоновыеЗадания</objectName>
 	</dataSet>
-	<dataSet xsi:type="DataSetQuery">
-		<name>НаборДанных1</name>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Ссылка</dataPath>
-			<field>Ссылка</field>
-		</field>
-		<dataSource>ИсточникДанных1</dataSource>
-		<query>ВЫБРАТЬ
-	Пользователи.Ссылка
-ИЗ
-	Справочник.Пользователи КАК Пользователи</query>
-	</dataSet>
 	<parameter>
 		<name>ЖурналРегистрации_СтандартныйПериод</name>
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
-				<v8:content>Период журнал регистрации</v8:content>
+				<v8:content>УДАЛИТЬ Период журнал регистрации</v8:content>
 			</v8:item>
 		</title>
 		<valueType>
@@ -925,7 +913,7 @@
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
-				<v8:content>Мак-ное кол-во событий журнал регистрации</v8:content>
+				<v8:content>УДАЛИТЬ Мак-ное кол-во событий  журнал регистрации</v8:content>
 			</v8:item>
 		</title>
 		<valueType>
@@ -982,7 +970,7 @@
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
-				<v8:content>За последние (минут)</v8:content>
+				<v8:content>УДАЛИТЬ За последние (минут)</v8:content>
 			</v8:item>
 		</title>
 		<valueType>
@@ -996,6 +984,28 @@
 		<value xsi:type="xs:decimal">0</value>
 		<useRestriction>false</useRestriction>
 		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>ЖурналРегистрации.Параметры</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Параметры журнала регистрации</v8:content>
+			</v8:item>
+		</title>
+		<valueType/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ФоновыеЗадания.Параметры</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Параметры фоновых заданий</v8:content>
+			</v8:item>
+		</title>
+		<valueType/>
+		<useRestriction>true</useRestriction>
 	</parameter>
 	<settingsVariant>
 		<dcsset:name>ЖурналСобытий</dcsset:name>
