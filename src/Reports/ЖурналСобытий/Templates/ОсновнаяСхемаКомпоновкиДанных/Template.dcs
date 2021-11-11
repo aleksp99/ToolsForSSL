@@ -16,15 +16,14 @@
 				</v8:item>
 			</title>
 			<valueType>
-				<v8:Type>xs:decimal</v8:Type>
-				<v8:NumberQualifiers>
-					<v8:Digits>1</v8:Digits>
-					<v8:FractionDigits>0</v8:FractionDigits>
-					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-				</v8:NumberQualifiers>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>20</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 			</valueType>
 			<availableValue>
-				<value xsi:type="xs:decimal">0</value>
+				<value xsi:type="xs:string">Информация</value>
 				<presentation xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -33,7 +32,7 @@
 				</presentation>
 			</availableValue>
 			<availableValue>
-				<value xsi:type="xs:decimal">1</value>
+				<value xsi:type="xs:string">Ошибка</value>
 				<presentation xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -42,7 +41,7 @@
 				</presentation>
 			</availableValue>
 			<availableValue>
-				<value xsi:type="xs:decimal">2</value>
+				<value xsi:type="xs:string">Предупреждение</value>
 				<presentation xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -51,7 +50,7 @@
 				</presentation>
 			</availableValue>
 			<availableValue>
-				<value xsi:type="xs:decimal">3</value>
+				<value xsi:type="xs:string">Примечание</value>
 				<presentation xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -69,9 +68,6 @@
 					<v8:content>Дата</v8:content>
 				</v8:item>
 			</title>
-			<useRestriction>
-				<condition>true</condition>
-			</useRestriction>
 			<valueType>
 				<v8:Type>xs:dateTime</v8:Type>
 				<v8:DateQualifiers>
@@ -135,9 +131,6 @@
 					<v8:content>Представление события</v8:content>
 				</v8:item>
 			</title>
-			<useRestriction>
-				<condition>true</condition>
-			</useRestriction>
 			<valueType>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
@@ -172,9 +165,6 @@
 					<v8:content>Представление метаданных</v8:content>
 				</v8:item>
 			</title>
-			<useRestriction>
-				<condition>true</condition>
-			</useRestriction>
 			<valueType>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
@@ -193,7 +183,10 @@
 				</v8:item>
 			</title>
 			<attributeUseRestriction>
+				<field>true</field>
 				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
 			</attributeUseRestriction>
 			<valueType>
 				<v8:Type>xs:boolean</v8:Type>
@@ -217,7 +210,7 @@
 			</valueType>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>ЖурналРегистрации.Данные.Представление</dataPath>
+			<dataPath>ЖурналРегистрации.ПредставлениеДанных</dataPath>
 			<field>ПредставлениеДанных</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
@@ -260,15 +253,14 @@
 				</v8:item>
 			</title>
 			<valueType>
-				<v8:Type>xs:decimal</v8:Type>
-				<v8:NumberQualifiers>
-					<v8:Digits>1</v8:Digits>
-					<v8:FractionDigits>0</v8:FractionDigits>
-					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-				</v8:NumberQualifiers>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>20</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 			</valueType>
 			<availableValue>
-				<value xsi:type="xs:decimal">0</value>
+				<value xsi:type="xs:string">Зафиксирована</value>
 				<presentation xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -277,7 +269,7 @@
 				</presentation>
 			</availableValue>
 			<availableValue>
-				<value xsi:type="xs:decimal">1</value>
+				<value xsi:type="xs:string">НеЗавершена</value>
 				<presentation xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -286,7 +278,7 @@
 				</presentation>
 			</availableValue>
 			<availableValue>
-				<value xsi:type="xs:decimal">2</value>
+				<value xsi:type="xs:string">НетТранзакции</value>
 				<presentation xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -295,7 +287,7 @@
 				</presentation>
 			</availableValue>
 			<availableValue>
-				<value xsi:type="xs:decimal">3</value>
+				<value xsi:type="xs:string">Отменена</value>
 				<presentation xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -331,9 +323,6 @@
 					<v8:content>Соединение</v8:content>
 				</v8:item>
 			</title>
-			<useRestriction>
-				<condition>true</condition>
-			</useRestriction>
 			<valueType>
 				<v8:Type>xs:decimal</v8:Type>
 				<v8:NumberQualifiers>
@@ -456,9 +445,6 @@
 					<v8:content>Представление приложения</v8:content>
 				</v8:item>
 			</title>
-			<useRestriction>
-				<condition>true</condition>
-			</useRestriction>
 			<valueType>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
@@ -498,9 +484,6 @@
 					<v8:content>Имя модуля</v8:content>
 				</v8:item>
 			</title>
-			<useRestriction>
-				<condition>true</condition>
-			</useRestriction>
 			<valueType>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
@@ -518,9 +501,6 @@
 					<v8:content>Исходная строка</v8:content>
 				</v8:item>
 			</title>
-			<useRestriction>
-				<condition>true</condition>
-			</useRestriction>
 			<valueType>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
@@ -538,9 +518,6 @@
 					<v8:content>Номер строки</v8:content>
 				</v8:item>
 			</title>
-			<useRestriction>
-				<condition>true</condition>
-			</useRestriction>
 			<valueType>
 				<v8:Type>xs:decimal</v8:Type>
 				<v8:NumberQualifiers>
@@ -559,9 +536,6 @@
 					<v8:content>Описание</v8:content>
 				</v8:item>
 			</title>
-			<useRestriction>
-				<condition>true</condition>
-			</useRestriction>
 			<valueType>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
@@ -579,9 +553,6 @@
 					<v8:content>Причина</v8:content>
 				</v8:item>
 			</title>
-			<useRestriction>
-				<condition>true</condition>
-			</useRestriction>
 			<valueType>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
@@ -665,9 +636,6 @@
 					<v8:content>Имя пользователя</v8:content>
 				</v8:item>
 			</title>
-			<useRestriction>
-				<condition>true</condition>
-			</useRestriction>
 			<valueType>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
@@ -685,9 +653,6 @@
 					<v8:content>Интервал повтора при аварийном завершении</v8:content>
 				</v8:item>
 			</title>
-			<useRestriction>
-				<condition>true</condition>
-			</useRestriction>
 			<valueType>
 				<v8:Type>xs:decimal</v8:Type>
 				<v8:NumberQualifiers>
@@ -706,9 +671,6 @@
 					<v8:content>Использование</v8:content>
 				</v8:item>
 			</title>
-			<useRestriction>
-				<condition>true</condition>
-			</useRestriction>
 			<valueType>
 				<v8:Type>xs:boolean</v8:Type>
 			</valueType>
@@ -722,9 +684,6 @@
 					<v8:content>Ключ</v8:content>
 				</v8:item>
 			</title>
-			<useRestriction>
-				<condition>true</condition>
-			</useRestriction>
 			<valueType>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
@@ -742,9 +701,6 @@
 					<v8:content>Количество повторов при аварийном завершении</v8:content>
 				</v8:item>
 			</title>
-			<useRestriction>
-				<condition>true</condition>
-			</useRestriction>
 			<valueType>
 				<v8:Type>xs:decimal</v8:Type>
 				<v8:NumberQualifiers>
@@ -797,9 +753,6 @@
 					<v8:content>Предопределенное</v8:content>
 				</v8:item>
 			</title>
-			<useRestriction>
-				<condition>true</condition>
-			</useRestriction>
 			<valueType>
 				<v8:Type>xs:boolean</v8:Type>
 			</valueType>
@@ -813,9 +766,6 @@
 					<v8:content>Идентификатор</v8:content>
 				</v8:item>
 			</title>
-			<useRestriction>
-				<condition>true</condition>
-			</useRestriction>
 			<valueType>
 				<v8:Type>v8:UUID</v8:Type>
 			</valueType>
@@ -830,15 +780,14 @@
 				</v8:item>
 			</title>
 			<valueType>
-				<v8:Type>xs:decimal</v8:Type>
-				<v8:NumberQualifiers>
-					<v8:Digits>1</v8:Digits>
-					<v8:FractionDigits>0</v8:FractionDigits>
-					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-				</v8:NumberQualifiers>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>40</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 			</valueType>
 			<availableValue>
-				<value xsi:type="xs:decimal">0</value>
+				<value xsi:type="xs:string">Активно</value>
 				<presentation xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -847,7 +796,7 @@
 				</presentation>
 			</availableValue>
 			<availableValue>
-				<value xsi:type="xs:decimal">1</value>
+				<value xsi:type="xs:string">Завершено</value>
 				<presentation xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -856,7 +805,7 @@
 				</presentation>
 			</availableValue>
 			<availableValue>
-				<value xsi:type="xs:decimal">2</value>
+				<value xsi:type="xs:string">ЗавершеноАварийно</value>
 				<presentation xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -865,7 +814,7 @@
 				</presentation>
 			</availableValue>
 			<availableValue>
-				<value xsi:type="xs:decimal">3</value>
+				<value xsi:type="xs:string">Отменено</value>
 				<presentation xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -891,101 +840,6 @@
 		<objectName>ФоновыеЗадания</objectName>
 	</dataSet>
 	<parameter>
-		<name>ЖурналРегистрации_СтандартныйПериод</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>УДАЛИТЬ Период журнал регистрации</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type>v8:StandardPeriod</v8:Type>
-		</valueType>
-		<value xsi:type="v8:StandardPeriod">
-			<v8:variant xsi:type="v8:StandardPeriodVariant">Today</v8:variant>
-		</value>
-		<useRestriction>false</useRestriction>
-		<denyIncompleteValues>true</denyIncompleteValues>
-		<use>Always</use>
-	</parameter>
-	<parameter>
-		<name>ЖурналРегистрации_МаксимальноеКоличество</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>УДАЛИТЬ Мак-ное кол-во событий  журнал регистрации</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type>xs:decimal</v8:Type>
-			<v8:NumberQualifiers>
-				<v8:Digits>5</v8:Digits>
-				<v8:FractionDigits>0</v8:FractionDigits>
-				<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-			</v8:NumberQualifiers>
-		</valueType>
-		<value xsi:type="xs:decimal">200</value>
-		<useRestriction>false</useRestriction>
-		<availableValue>
-			<value xsi:type="xs:decimal">200</value>
-			<presentation xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>200 событий</v8:content>
-				</v8:item>
-			</presentation>
-		</availableValue>
-		<availableValue>
-			<value xsi:type="xs:decimal">500</value>
-			<presentation xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>500 событий</v8:content>
-				</v8:item>
-			</presentation>
-		</availableValue>
-		<availableValue>
-			<value xsi:type="xs:decimal">1000</value>
-			<presentation xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>1 000 событий</v8:content>
-				</v8:item>
-			</presentation>
-		</availableValue>
-		<availableValue>
-			<value xsi:type="xs:decimal">10000</value>
-			<presentation xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>10 000 событий</v8:content>
-				</v8:item>
-			</presentation>
-		</availableValue>
-		<denyIncompleteValues>true</denyIncompleteValues>
-		<use>Always</use>
-	</parameter>
-	<parameter>
-		<name>ЗаПоследние</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>УДАЛИТЬ За последние (минут)</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type>xs:decimal</v8:Type>
-			<v8:NumberQualifiers>
-				<v8:Digits>10</v8:Digits>
-				<v8:FractionDigits>0</v8:FractionDigits>
-				<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-			</v8:NumberQualifiers>
-		</valueType>
-		<value xsi:type="xs:decimal">0</value>
-		<useRestriction>false</useRestriction>
-		<use>Always</use>
-	</parameter>
-	<parameter>
 		<name>ЖурналРегистрации.Параметры</name>
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
@@ -993,8 +847,11 @@
 				<v8:content>Параметры журнала регистрации</v8:content>
 			</v8:item>
 		</title>
-		<valueType/>
+		<valueType>
+			<v8:Type>v8:ValueStorage</v8:Type>
+		</valueType>
 		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
 	</parameter>
 	<parameter>
 		<name>ФоновыеЗадания.Параметры</name>
@@ -1004,8 +861,11 @@
 				<v8:content>Параметры фоновых заданий</v8:content>
 			</v8:item>
 		</title>
-		<valueType/>
+		<valueType>
+			<v8:Type>v8:ValueStorage</v8:Type>
+		</valueType>
 		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
 	</parameter>
 	<settingsVariant>
 		<dcsset:name>ЖурналСобытий</dcsset:name>
@@ -1019,53 +879,341 @@
 			<dcsset:selection>
 			</dcsset:selection>
 			<dcsset:filter>
-				<dcsset:item xsi:type="dcsset:FilterItemComparison">
-					<dcsset:left xsi:type="dcscor:Field">ЖурналРегистрации.Компьютер</dcsset:left>
-					<dcsset:comparisonType>Equal</dcsset:comparisonType>
-					<dcsset:right xsi:type="xs:string">iA11</dcsset:right>
-				</dcsset:item>
 			</dcsset:filter>
-			<dcsset:dataParameters>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>ЖурналРегистрации_СтандартныйПериод</dcscor:parameter>
-					<dcscor:value xsi:type="v8:StandardPeriod">
-						<v8:variant xsi:type="v8:StandardPeriodVariant">Today</v8:variant>
-					</dcscor:value>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>ЖурналРегистрации_МаксимальноеКоличество</dcscor:parameter>
-					<dcscor:value xsi:type="xs:decimal">1000</dcscor:value>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>ЗаПоследние</dcscor:parameter>
-					<dcscor:value xsi:type="xs:decimal">120</dcscor:value>
-				</dcscor:item>
-			</dcsset:dataParameters>
+			<dcsset:dataParameters/>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:name>ЖурналРегистрации</dcsset:name>
 				<dcsset:order>
-					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					<dcsset:item xsi:type="dcsset:OrderItemField">
+						<dcsset:field>ЖурналРегистрации.Дата</dcsset:field>
+						<dcsset:orderType>Desc</dcsset:orderType>
+					</dcsset:item>
 				</dcsset:order>
 				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ЖурналРегистрации.Уровень</dcsset:field>
+					</dcsset:item>
 					<dcsset:item xsi:type="dcsset:SelectedItemField">
 						<dcsset:field>ЖурналРегистрации.Дата</dcsset:field>
 					</dcsset:item>
 					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>ЖурналРегистрации.Уровень</dcsset:field>
+						<dcsset:field>ЖурналРегистрации.Пользователь</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ЖурналРегистрации.Компьютер</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ЖурналРегистрации.Приложение.Представление</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Приложение</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ЖурналРегистрации.Сеанс</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ЖурналРегистрации.Соединение</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ЖурналРегистрации.РабочийСервер</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ЖурналРегистрации.Событие.Представление</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Событие</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ЖурналРегистрации.Данные</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ЖурналРегистрации.Метаданные</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ЖурналРегистрации.Транзакция.Статус</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+						<dcsset:field>ЖурналРегистрации.IPПорт</dcsset:field>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ЖурналРегистрации.IPПорт.Основной</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ЖурналРегистрации.IPПорт.Вспомогательный</dcsset:field>
+						</dcsset:item>
+						<dcsset:placement>Auto</dcsset:placement>
 					</dcsset:item>
 					<dcsset:item xsi:type="dcsset:SelectedItemField">
 						<dcsset:field>ЖурналРегистрации.Комментарий</dcsset:field>
 					</dcsset:item>
 				</dcsset:selection>
+				<dcsset:conditionalAppearance>
+					<dcsset:item>
+						<dcsset:selection/>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ЖурналРегистрации.Уровень</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string">Ошибка</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ЦветТекста</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Color">style:NegativeTextColor</dcscor:value>
+							</dcscor:item>
+						</dcsset:appearance>
+						<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+						<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
+						<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+						<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+						<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:selection/>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ЖурналРегистрации.Уровень</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string">Предупреждение</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ЦветТекста</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Color">#FFC000</dcscor:value>
+							</dcscor:item>
+						</dcsset:appearance>
+						<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+						<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
+						<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+						<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+						<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:selection/>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ЖурналРегистрации.Уровень</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string">Примечание</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ЦветТекста</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Color">#E7E6E6</dcscor:value>
+							</dcscor:item>
+						</dcsset:appearance>
+						<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+						<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
+						<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+						<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+						<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:selection/>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ЖурналРегистрации.Уровень</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string">Информация</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ЦветТекста</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Color">#4472C4</dcscor:value>
+							</dcscor:item>
+						</dcsset:appearance>
+						<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+						<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
+						<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+						<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+						<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+					</dcsset:item>
+				</dcsset:conditionalAppearance>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Журнал регистрации</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
 			</dcsset:item>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:name>ФоновыеЗадания</dcsset:name>
 				<dcsset:order>
-					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					<dcsset:item xsi:type="dcsset:OrderItemField">
+						<dcsset:field>ФоновыеЗадания.Начало</dcsset:field>
+						<dcsset:orderType>Desc</dcsset:orderType>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:OrderItemField">
+						<dcsset:field>ФоновыеЗадания.Конец</dcsset:field>
+						<dcsset:orderType>Desc</dcsset:orderType>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:OrderItemField">
+						<dcsset:field>ФоновыеЗадания.Наименование</dcsset:field>
+						<dcsset:orderType>Asc</dcsset:orderType>
+					</dcsset:item>
 				</dcsset:order>
 				<dcsset:selection>
 					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>Ссылка</dcsset:field>
+						<dcsset:field>ФоновыеЗадания.Состояние</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ФоновыеЗадания.Наименование</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ФоновыеЗадания.Начало</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ФоновыеЗадания.Ключ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ФоновыеЗадания.РегламентноеЗадание.Наименование</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Регламентное задание</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ФоновыеЗадания.ИмяМетода</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ФоновыеЗадания.Ключ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ФоновыеЗадания.УникальныйИдентификатор</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+						<dcsset:field>ФоновыеЗадания.ИнформацияОбОшибке</dcsset:field>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ФоновыеЗадания.ИнформацияОбОшибке.ИмяМодуля</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ФоновыеЗадания.ИнформацияОбОшибке.ИсходнаяСтрока</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ФоновыеЗадания.ИнформацияОбОшибке.НомерСтроки</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ФоновыеЗадания.ИнформацияОбОшибке.Описание</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ФоновыеЗадания.ИнформацияОбОшибке.Причина</dcsset:field>
+						</dcsset:item>
+						<dcsset:placement>Auto</dcsset:placement>
 					</dcsset:item>
 				</dcsset:selection>
+				<dcsset:conditionalAppearance>
+					<dcsset:item>
+						<dcsset:selection/>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ФоновыеЗадания.Состояние</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string">ЗавершеноАварийно</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ЦветТекста</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Color">style:NegativeTextColor</dcscor:value>
+							</dcscor:item>
+						</dcsset:appearance>
+						<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+						<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
+						<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+						<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+						<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:selection/>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ФоновыеЗадания.Состояние</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string">Отменено</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ЦветТекста</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Color">#FFC000</dcscor:value>
+							</dcscor:item>
+						</dcsset:appearance>
+						<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+						<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
+						<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+						<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+						<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:selection/>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ФоновыеЗадания.Состояние</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string">Завершено</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ЦветТекста</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Color">#E7E6E6</dcscor:value>
+							</dcscor:item>
+						</dcsset:appearance>
+						<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+						<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
+						<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+						<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+						<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:selection/>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ФоновыеЗадания.Состояние</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string">Активно</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ЦветТекста</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Color">style:AccentColor</dcscor:value>
+							</dcscor:item>
+						</dcsset:appearance>
+						<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+						<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
+						<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+						<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+						<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+					</dcsset:item>
+				</dcsset:conditionalAppearance>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Фоновые задания</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
 			</dcsset:item>
 		</dcsset:settings>
 	</settingsVariant>

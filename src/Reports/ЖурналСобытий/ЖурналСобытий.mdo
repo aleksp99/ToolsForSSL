@@ -22,6 +22,15 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="a02c1b52-02e7-40d4-91f5-d80dcaed2a2a">
+    <name>РедакторСоставаСвойства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Редактор состава свойства</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <templates uuid="20a4d906-27d8-4f11-b665-539a52ee0e11">
     <name>ОсновнаяСхемаКомпоновкиДанных</name>
     <synonym>

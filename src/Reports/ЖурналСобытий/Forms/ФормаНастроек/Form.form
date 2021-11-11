@@ -223,6 +223,10 @@
             <dataPath xsi:type="form:DataPath">
               <segments>ЖурналРегистрации_Период.StartDate</segments>
             </dataPath>
+            <handlers>
+              <event>OnChange</event>
+              <name>ЭлементВнешнегоНабораДанныхПриИзменении</name>
+            </handlers>
             <extendedTooltip>
               <name>ЖурналРегистрации_ПериодДатаНачалаРасширеннаяПодсказка</name>
               <id>324</id>
@@ -277,6 +281,10 @@
             <dataPath xsi:type="form:DataPath">
               <segments>ЖурналРегистрации_Период.EndDate</segments>
             </dataPath>
+            <handlers>
+              <event>OnChange</event>
+              <name>ЭлементВнешнегоНабораДанныхПриИзменении</name>
+            </handlers>
             <extendedTooltip>
               <name>ЖурналРегистрации_ПериодДатаОкончанияРасширеннаяПодсказка</name>
               <id>327</id>
@@ -665,6 +673,10 @@
                 <dataPath xsi:type="form:DataPath">
                   <segments>ЖурналРегистрации_Уровень.Check</segments>
                 </dataPath>
+                <handlers>
+                  <event>OnChange</event>
+                  <name>ЭлементВнешнегоНабораДанныхПриИзменении</name>
+                </handlers>
                 <extendedTooltip>
                   <name>ЖурналРегистрации_УровеньПометкаРасширеннаяПодсказка</name>
                   <id>405</id>
@@ -1018,6 +1030,10 @@
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
+              <handlers>
+                <event>StartChoice</event>
+                <name>СвойстваНачалоВыбора</name>
+              </handlers>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <wrap>true</wrap>
@@ -1068,6 +1084,10 @@
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
+              <handlers>
+                <event>StartChoice</event>
+                <name>СвойстваНачалоВыбора</name>
+              </handlers>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <wrap>true</wrap>
@@ -1118,6 +1138,10 @@
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
+              <handlers>
+                <event>StartChoice</event>
+                <name>СвойстваНачалоВыбора</name>
+              </handlers>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <wrap>true</wrap>
@@ -1168,6 +1192,10 @@
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
+              <handlers>
+                <event>StartChoice</event>
+                <name>СвойстваНачалоВыбора</name>
+              </handlers>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <wrap>true</wrap>
@@ -1187,6 +1215,10 @@
             <dataPath xsi:type="form:DataPath">
               <segments>ЖурналРегистрации_Сеанс</segments>
             </dataPath>
+            <handlers>
+              <event>OnChange</event>
+              <name>ЭлементВнешнегоНабораДанныхПриИзменении</name>
+            </handlers>
             <extendedTooltip>
               <name>ЖурналРегистрации_СеансРасширеннаяПодсказка</name>
               <id>400</id>
@@ -1337,6 +1369,10 @@
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
           <extInfo xsi:type="form:InputFieldExtInfo">
+            <handlers>
+              <event>StartChoice</event>
+              <name>СвойстваНачалоВыбора</name>
+            </handlers>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
             <wrap>true</wrap>
@@ -1356,6 +1392,10 @@
           <dataPath xsi:type="form:DataPath">
             <segments>ЖурналРегистрации_Данные</segments>
           </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>ЭлементВнешнегоНабораДанныхПриИзменении</name>
+          </handlers>
           <extendedTooltip>
             <name>ЖурналРегистрации_ДанныеРасширеннаяПодсказка</name>
             <id>421</id>
@@ -1407,6 +1447,10 @@
           <dataPath xsi:type="form:DataPath">
             <segments>ЖурналРегистрации_ПредставлениеДанных</segments>
           </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>ЭлементВнешнегоНабораДанныхПриИзменении</name>
+          </handlers>
           <extendedTooltip>
             <name>ЖурналРегистрации_ПредставлениеДанныхРасширеннаяПодсказка</name>
             <id>424</id>
@@ -1682,6 +1726,10 @@
                 <dataPath xsi:type="form:DataPath">
                   <segments>ЖурналРегистрации_СтатусТранзакции.Check</segments>
                 </dataPath>
+                <handlers>
+                  <event>OnChange</event>
+                  <name>ЭлементВнешнегоНабораДанныхПриИзменении</name>
+                </handlers>
                 <extendedTooltip>
                   <name>ЖурналРегистрации_СтатусТранзакцииПометкаРасширеннаяПодсказка</name>
                   <id>483</id>
@@ -2001,6 +2049,10 @@
           <dataPath xsi:type="form:DataPath">
             <segments>ЖурналРегистрации_Транзакция</segments>
           </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>ЭлементВнешнегоНабораДанныхПриИзменении</name>
+          </handlers>
           <extendedTooltip>
             <name>ЖурналРегистрации_ТранзакцияРасширеннаяПодсказка</name>
             <id>476</id>
@@ -2053,6 +2105,211 @@
         <extendedTooltip>
           <name>ЖурналРегистрации_ГруппаТранзакцииРасширеннаяПодсказка</name>
           <id>426</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <behavior>Collapsible</behavior>
+          <collapsed>true</collapsed>
+          <representation>StrongSeparation</representation>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <showTitle>true</showTitle>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ЖурналРегистрации_ГруппаПрочее</name>
+        <id>550</id>
+        <items xsi:type="form:FormField">
+          <name>ЖурналРегистрации_РабочийСервер</name>
+          <id>552</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>ЖурналРегистрации_РабочийСервер</segments>
+          </dataPath>
+          <titleHeight>2</titleHeight>
+          <extendedTooltip>
+            <name>ЖурналРегистрации_РабочийСерверРасширеннаяПодсказка</name>
+            <id>554</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ЖурналРегистрации_РабочийСерверКонтекстноеМеню</name>
+            <id>553</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <handlers>
+              <event>StartChoice</event>
+              <name>СвойстваНачалоВыбора</name>
+            </handlers>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>ЖурналРегистрации_ОсновнойIPПорт</name>
+          <id>555</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>ЖурналРегистрации_ОсновнойIPПорт</segments>
+          </dataPath>
+          <titleHeight>2</titleHeight>
+          <extendedTooltip>
+            <name>ЖурналРегистрации_ОсновнойIPПортРасширеннаяПодсказка</name>
+            <id>557</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ЖурналРегистрации_ОсновнойIPПортКонтекстноеМеню</name>
+            <id>556</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <handlers>
+              <event>StartChoice</event>
+              <name>СвойстваНачалоВыбора</name>
+            </handlers>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>ЖурналРегистрации_ВспомогательныйIPПорт</name>
+          <id>558</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>ЖурналРегистрации_ВспомогательныйIPПорт</segments>
+          </dataPath>
+          <titleHeight>2</titleHeight>
+          <extendedTooltip>
+            <name>ЖурналРегистрации_ВспомогательныйIPПортРасширеннаяПодсказка</name>
+            <id>560</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ЖурналРегистрации_ВспомогательныйIPПортКонтекстноеМеню</name>
+            <id>559</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <handlers>
+              <event>StartChoice</event>
+              <name>СвойстваНачалоВыбора</name>
+            </handlers>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Прочее</value>
+        </title>
+        <extendedTooltip>
+          <name>ЖурналРегистрации_ГруппаПрочееРасширеннаяПодсказка</name>
+          <id>551</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -2132,6 +2389,10 @@
             <dataPath xsi:type="form:DataPath">
               <segments>ФоновыеЗадания_Период.StartDate</segments>
             </dataPath>
+            <handlers>
+              <event>OnChange</event>
+              <name>ЭлементВнешнегоНабораДанныхПриИзменении</name>
+            </handlers>
             <extendedTooltip>
               <name>ФоновыеЗадания_ПериодДатаНачалаРасширеннаяПодсказка</name>
               <id>336</id>
@@ -2186,6 +2447,10 @@
             <dataPath xsi:type="form:DataPath">
               <segments>ФоновыеЗадания_Период.EndDate</segments>
             </dataPath>
+            <handlers>
+              <event>OnChange</event>
+              <name>ЭлементВнешнегоНабораДанныхПриИзменении</name>
+            </handlers>
             <extendedTooltip>
               <name>ФоновыеЗадания_ПериодДатаОкончанияРасширеннаяПодсказка</name>
               <id>339</id>
@@ -2575,6 +2840,10 @@
                 <dataPath xsi:type="form:DataPath">
                   <segments>ФоновыеЗадания_Состояние.Check</segments>
                 </dataPath>
+                <handlers>
+                  <event>OnChange</event>
+                  <name>ЭлементВнешнегоНабораДанныхПриИзменении</name>
+                </handlers>
                 <extendedTooltip>
                   <name>ФоновыеЗадания_СостояниеПометкаРасширеннаяПодсказка</name>
                   <id>519</id>
@@ -2897,6 +3166,10 @@
             <dataPath xsi:type="form:DataPath">
               <segments>ФоновыеЗадания_УникальныйИдентификатор</segments>
             </dataPath>
+            <handlers>
+              <event>OnChange</event>
+              <name>ЭлементВнешнегоНабораДанныхПриИзменении</name>
+            </handlers>
             <extendedTooltip>
               <name>ФоновыеЗадания_УникальныйИдентификаторРасширеннаяПодсказка</name>
               <id>527</id>
@@ -2948,6 +3221,10 @@
             <dataPath xsi:type="form:DataPath">
               <segments>ФоновыеЗадания_Наименование</segments>
             </dataPath>
+            <handlers>
+              <event>OnChange</event>
+              <name>ЭлементВнешнегоНабораДанныхПриИзменении</name>
+            </handlers>
             <extendedTooltip>
               <name>ФоновыеЗадания_НаименованиеРасширеннаяПодсказка</name>
               <id>524</id>
@@ -2999,6 +3276,10 @@
             <dataPath xsi:type="form:DataPath">
               <segments>ФоновыеЗадания_Ключ</segments>
             </dataPath>
+            <handlers>
+              <event>OnChange</event>
+              <name>ЭлементВнешнегоНабораДанныхПриИзменении</name>
+            </handlers>
             <extendedTooltip>
               <name>ФоновыеЗадания_КлючРасширеннаяПодсказка</name>
               <id>530</id>
@@ -3050,6 +3331,10 @@
             <dataPath xsi:type="form:DataPath">
               <segments>ФоновыеЗадания_ИмяМетода</segments>
             </dataPath>
+            <handlers>
+              <event>OnChange</event>
+              <name>ЭлементВнешнегоНабораДанныхПриИзменении</name>
+            </handlers>
             <extendedTooltip>
               <name>ФоновыеЗадания_ИмяМетодаРасширеннаяПодсказка</name>
               <id>533</id>
@@ -3132,6 +3417,10 @@
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
+              <handlers>
+                <event>StartChoice</event>
+                <name>СвойстваНачалоВыбора</name>
+              </handlers>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <wrap>true</wrap>
@@ -8494,6 +8783,83 @@
     <edit>
       <common>true</common>
     </edit>
+  </attributes>
+  <attributes>
+    <name>ЖурналРегистрации_РабочийСервер</name>
+    <title>
+      <key>ru</key>
+      <value>Рабочий сервер</value>
+    </title>
+    <id>33</id>
+    <valueType>
+      <types>ValueList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:ValueListExtInfo">
+      <itemValueType>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </itemValueType>
+    </extInfo>
+  </attributes>
+  <attributes>
+    <name>ЖурналРегистрации_ОсновнойIPПорт</name>
+    <title>
+      <key>ru</key>
+      <value>Основной IP-Порт</value>
+    </title>
+    <id>34</id>
+    <valueType>
+      <types>ValueList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:ValueListExtInfo">
+      <itemValueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </itemValueType>
+    </extInfo>
+  </attributes>
+  <attributes>
+    <name>ЖурналРегистрации_ВспомогательныйIPПорт</name>
+    <title>
+      <key>ru</key>
+      <value>Вспомогательный IP-Порт</value>
+    </title>
+    <id>35</id>
+    <valueType>
+      <types>ValueList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:ValueListExtInfo">
+      <itemValueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </itemValueType>
+    </extInfo>
   </attributes>
   <formCommands>
     <name>ЗавершитьРедактирование</name>
