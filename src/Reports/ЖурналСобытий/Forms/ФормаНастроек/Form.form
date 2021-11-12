@@ -28,12 +28,12 @@
       <autoFill>true</autoFill>
     </autoCommandBar>
     <handlers>
-      <event>OnActivateRow</event>
-      <name>КомпоновщикНастроекНастройкиПриАктивизацииСтроки</name>
-    </handlers>
-    <handlers>
       <event>OnActivateField</event>
       <name>КомпоновщикНастроекНастройкиПриАктивизацииПоля</name>
+    </handlers>
+    <handlers>
+      <event>OnActivateRow</event>
+      <name>КомпоновщикНастроекНастройкиПриАктивизацииСтроки</name>
     </handlers>
     <searchStringAddition>
       <visible>true</visible>
@@ -202,6 +202,223 @@
     <items xsi:type="form:FormGroup">
       <name>СтраницаЖурналРегистрации</name>
       <id>318</id>
+      <items xsi:type="form:FormGroup">
+        <name>ЖурналРегистрации_ГруппаЛокальные</name>
+        <id>590</id>
+        <items xsi:type="form:FormField">
+          <name>ЖурналРегистрации_Локальные</name>
+          <id>578</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>ЖурналРегистрации_Локальные</segments>
+          </dataPath>
+          <titleHeight>2</titleHeight>
+          <handlers>
+            <event>OnChange</event>
+            <name>ЛокальныеПриИзменении</name>
+          </handlers>
+          <extendedTooltip>
+            <name>ЖурналРегистрации_ЛокальныеРасширеннаяПодсказка</name>
+            <id>580</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ЖурналРегистрации_ЛокальныеКонтекстноеМеню</name>
+            <id>579</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>CheckBoxField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+            <checkBoxType>Switcher</checkBoxType>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Button">
+          <name>ЖурналРегистрации_ЛокальныеНайти</name>
+          <id>592</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ЖурналРегистрации_ЛокальныеНайтиРасширеннаяПодсказка</name>
+            <id>593</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualButton</type>
+          <commandName>Form.Command.ЖурналРегистрации_ЛокальныеНайти</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <toolTipRepresentation>Auto</toolTipRepresentation>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ЖурналРегистрации_ГруппаЛокальныеРасширеннаяПодсказка</name>
+          <id>591</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>AlwaysHorizontal</group>
+          <behavior>Auto</behavior>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>ЖурналРегистрации_МаксимальноеКоличество</name>
+        <id>597</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ЖурналРегистрации_МаксимальноеКоличество</segments>
+        </dataPath>
+        <shortcut>Ctrl+S</shortcut>
+        <handlers>
+          <event>OnChange</event>
+          <name>ЭлементВнешнегоНабораДанныхПриИзменении</name>
+        </handlers>
+        <extendedTooltip>
+          <name>ЖурналРегистрации_МаксимальноеКоличествоРасширеннаяПодсказка</name>
+          <id>599</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ЖурналРегистрации_МаксимальноеКоличествоКонтекстноеМеню</name>
+          <id>598</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <horizontalStretch>false</horizontalStretch>
+          <wrap>true</wrap>
+          <listChoiceMode>true</listChoiceMode>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Все события</value>
+            </presentation>
+            <value xsi:type="core:NumberValue">
+              <value>0</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>    200 событий</value>
+            </presentation>
+            <value xsi:type="core:NumberValue">
+              <value>200</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>    500 событий</value>
+            </presentation>
+            <value xsi:type="core:NumberValue">
+              <value>500</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>  1000 событий</value>
+            </presentation>
+            <value xsi:type="core:NumberValue">
+              <value>1000</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>10000 событий</value>
+            </presentation>
+            <value xsi:type="core:NumberValue">
+              <value>10000</value>
+            </value>
+          </choiceList>
+        </extInfo>
+      </items>
       <items xsi:type="form:FormGroup">
         <name>ЖурналРегистрации_ГруппаПериод</name>
         <id>320</id>
@@ -1447,10 +1664,6 @@
           <dataPath xsi:type="form:DataPath">
             <segments>ЖурналРегистрации_ПредставлениеДанных</segments>
           </dataPath>
-          <handlers>
-            <event>OnChange</event>
-            <name>ЭлементВнешнегоНабораДанныхПриИзменении</name>
-          </handlers>
           <extendedTooltip>
             <name>ЖурналРегистрации_ПредставлениеДанныхРасширеннаяПодсказка</name>
             <id>424</id>
@@ -2286,10 +2499,6 @@
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
           <extInfo xsi:type="form:InputFieldExtInfo">
-            <handlers>
-              <event>StartChoice</event>
-              <name>СвойстваНачалоВыбора</name>
-            </handlers>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
             <wrap>true</wrap>
@@ -2368,6 +2577,121 @@
     <items xsi:type="form:FormGroup">
       <name>СтраницаФоновыеЗадания</name>
       <id>330</id>
+      <items xsi:type="form:FormGroup">
+        <name>ФоновыеЗадания_ГруппаЛокальные</name>
+        <id>584</id>
+        <items xsi:type="form:FormField">
+          <name>ФоновыеЗадания_Локальные</name>
+          <id>581</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>ФоновыеЗадания_Локальные</segments>
+          </dataPath>
+          <titleHeight>2</titleHeight>
+          <handlers>
+            <event>OnChange</event>
+            <name>ЛокальныеПриИзменении</name>
+          </handlers>
+          <extendedTooltip>
+            <name>ФоновыеЗадания_ЛокальныеРасширеннаяПодсказка</name>
+            <id>583</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ФоновыеЗадания_ЛокальныеКонтекстноеМеню</name>
+            <id>582</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>CheckBoxField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+            <checkBoxType>Switcher</checkBoxType>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Button">
+          <name>ФоновыеЗадания_ЛокальныеНайти</name>
+          <id>588</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ФоновыеЗадания_ЛокальныеНайтиРасширеннаяПодсказка</name>
+            <id>589</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualButton</type>
+          <commandName>Form.Command.ФоновыеЗадания_ЛокальныеНайти</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <toolTipRepresentation>Auto</toolTipRepresentation>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ФоновыеЗадания_ГруппаЛокальныеРасширеннаяПодсказка</name>
+          <id>585</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>AlwaysHorizontal</group>
+          <behavior>Auto</behavior>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
       <items xsi:type="form:FormGroup">
         <name>ФоновыеЗадания_ГруппаПериод</name>
         <id>332</id>
@@ -3420,6 +3744,10 @@
               <handlers>
                 <event>StartChoice</event>
                 <name>СвойстваНачалоВыбора</name>
+              </handlers>
+              <handlers>
+                <event>Clearing</event>
+                <name>ФоновыеЗадания_РегламентноеЗадание_НаименованиеОчистка</name>
               </handlers>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -8861,6 +9189,93 @@
       </itemValueType>
     </extInfo>
   </attributes>
+  <attributes>
+    <name>ЖурналРегистрации_Локальные</name>
+    <title>
+      <key>ru</key>
+      <value>Текущий элемент является основным</value>
+    </title>
+    <id>36</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ФоновыеЗадания_Локальные</name>
+    <title>
+      <key>ru</key>
+      <value>Текущий элемент является основным</value>
+    </title>
+    <id>37</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ФоновыеЗадания_Локальные_Имя</name>
+    <id>38</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ЖурналРегистрации_Локальные_Имя</name>
+    <id>39</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ЖурналРегистрации_МаксимальноеКоличество</name>
+    <title>
+      <key>ru</key>
+      <value>Макс. количество</value>
+    </title>
+    <id>40</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
   <formCommands>
     <name>ЗавершитьРедактирование</name>
     <title>
@@ -9021,6 +9436,48 @@
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
         <name>ИзменитьФлажки</name>
+      </handler>
+    </action>
+    <representation>Picture</representation>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ФоновыеЗадания_ЛокальныеНайти</name>
+    <title>
+      <key>ru</key>
+      <value>Найти</value>
+    </title>
+    <id>11</id>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.SyncContents</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ЛокальныеНайти</name>
+      </handler>
+    </action>
+    <representation>Picture</representation>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ЖурналРегистрации_ЛокальныеНайти</name>
+    <title>
+      <key>ru</key>
+      <value>Найти</value>
+    </title>
+    <id>12</id>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.SyncContents</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ЛокальныеНайти</name>
       </handler>
     </action>
     <representation>Picture</representation>
