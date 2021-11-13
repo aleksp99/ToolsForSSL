@@ -839,34 +839,6 @@
 		<dataSource>ИсточникДанных1</dataSource>
 		<objectName>ФоновыеЗадания</objectName>
 	</dataSet>
-	<parameter>
-		<name>ЖурналРегистрации.Параметры</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Параметры журнала регистрации</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type>v8:ValueStorage</v8:Type>
-		</valueType>
-		<useRestriction>true</useRestriction>
-		<availableAsField>false</availableAsField>
-	</parameter>
-	<parameter>
-		<name>ФоновыеЗадания.Параметры</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Параметры фоновых заданий</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type>v8:ValueStorage</v8:Type>
-		</valueType>
-		<useRestriction>true</useRestriction>
-		<availableAsField>false</availableAsField>
-	</parameter>
 	<settingsVariant>
 		<dcsset:name>ЖурналСобытий</dcsset:name>
 		<dcsset:presentation xsi:type="v8:LocalStringType">
