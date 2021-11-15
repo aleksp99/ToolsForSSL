@@ -979,7 +979,7 @@
 						<dcsset:appearance>
 							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 								<dcscor:parameter>ЦветТекста</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Color">#E7E6E6</dcscor:value>
+								<dcscor:value xsi:type="v8ui:Color">web:DarkSlateGray</dcscor:value>
 							</dcscor:item>
 						</dcsset:appearance>
 						<dcsset:useInOverall>DontUse</dcsset:useInOverall>
@@ -1144,7 +1144,7 @@
 						<dcsset:appearance>
 							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 								<dcscor:parameter>ЦветТекста</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Color">#E7E6E6</dcscor:value>
+								<dcscor:value xsi:type="v8ui:Color">web:DarkSlateGray</dcscor:value>
 							</dcscor:item>
 						</dcsset:appearance>
 						<dcsset:useInOverall>DontUse</dcsset:useInOverall>
