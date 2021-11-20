@@ -9,7 +9,7 @@
     <key>ru</key>
     <value>Журнал событий</value>
   </synonym>
-  <comment>ver. 2.1</comment>
+  <comment>ver. 2.2</comment>
   <useStandardCommands>true</useStandardCommands>
   <mainDataCompositionSchema>Report.ЖурналСобытий.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
   <defaultSettingsForm>Report.ЖурналСобытий.Form.ФормаНастроек</defaultSettingsForm>
